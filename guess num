@@ -1,0 +1,25 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Random r= new Random();
+	    int count=1;
+	    Boolean t=true;
+	    Scanner s= new Scanner(System.in);
+	    int w=r.nextInt((99)+1);
+	    while(t){ 
+	    System.out.println("enter the number (1-100):");
+	   int q=s.nextInt();
+	    if(q==w){
+		System.out.println("your choice matches with computer:"+q);
+		t=false;
+	    }else{
+	        count++;
+	        if(w<q){
+		System.out.println("the given number is too high:"+q);}
+		    else if(w>q){
+		 System.out.println("the given number is too low:"+q);}
+		    }
+		}
+		System.out.println("no.of times you entered:"+count);
+	}}
